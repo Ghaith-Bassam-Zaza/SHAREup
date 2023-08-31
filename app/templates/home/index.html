@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+{% if not current_user.is_authenticated %}
+<div class="container header">
+    <div class="row">
+        <div class="col-sm12- col-md-6 headingCode">
+            <h1><span>SHAREup,</span> Connect your world!</h1>
+        </div>
+        <div class="col-sm12- col-md-6 imgHeader">
+            <a href="#" class="thumbnail">
+                <img src="{{ url_for('static', filename='images/header_bg1.svg') }}" alt="header image">
+            </a>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="container showInfoCard">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/hacker10.jpg') }}" class="card-img-top" alt="background profile">
+        <div class="photo_profile_display">
+          <img src="{{  current_user.email | gravatar }}">
+        </div>
+        <h3>{{ current_user.name }}</h3>
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 main-content">
+      <div class="main-content-form clearfix">
+        <form action="" method="POST">
+          <textarea name="tweet" cols="30" rows="5" placeholder="what's happens?"></textarea>
+          <button type="submit">Tweet</button>
+        </form>
+      </div>
+      <div class="main-content-posts">
+        <div class="post-component">
+          <div class="post-component-author">
+            <img src="http://www.gravatar.com/avatar/59e45dd4f228319ab7df078385546aa5?s=100&d=identicon&r=g" alt="author">
+            <h3>Author</h3>
+            <span>date</span>
+          </div>
+          <div class="post-component-posts">
+            <p>
+              post content
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

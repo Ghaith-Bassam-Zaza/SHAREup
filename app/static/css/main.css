@@ -1,0 +1,162 @@
+/* register form */
+
+.StyleForm .container {
+    width: 60%;
+    margin: 50px auto;
+    box-shadow: 1px 10px 20px #ececec;
+    border-radius: 5px;
+    background: white;
+    padding: 30px
+}
+
+.StyleForm .container .leftSide > img {
+    width: 100%;
+    position: relative;
+    top: 110px;
+}
+
+.StyleForm .container .rightSide > h1 {
+    margin-bottom: 20px;
+    color: #3f3d55;
+    font-weight: bold;
+    text-align: center;
+}
+
+.StyleForm .container .rightSide > form .form-group label {
+  margin-bottom: 0;
+}
+
+.StyleForm .container .rightSide > form input[type=submit] {
+    width: 100%;
+    margin: 25px 0;
+    background: #2f2e41;
+    border: none;
+    color: white
+}
+
+/* login form */
+.resetImg
+{
+  width: 100%;
+  position: relative;
+  top: 35px !important
+}
+
+/* 404 page not found */
+.notFound > div > h1 {
+    letter-spacing: 7px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #2f2e41;
+}
+
+.notFound > div > p {
+  color: #a2a2a2;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+/* header */
+
+.header {
+    margin-bottom: 50px;
+    margin-top: 100px
+}
+
+.header .row .headingCode {
+    padding: 34px
+}
+
+.header .row .headingCode h1 {
+  font-size: 75px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.header .row .headingCode h1 > span {
+    color: #399dc4;
+}
+
+.header .row .imgHeader .thumbnail {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    background: none
+}
+
+.header .row .imgHeader .thumbnail > img {
+    width: 100%
+}
+
+/* profile card */
+
+.showInfoCard .card .photo_profile_display img {
+  border-radius: 50%;
+  position: absolute;
+  top: 163px;
+  left: 10px;
+}
+
+.showInfoCard .card h3 {
+  position: relative;
+  left: 120px;
+  top: 5px;
+}
+
+/* form-post styling */
+.main-content .main-content-form {
+  margin: 25px 0;
+}
+
+
+.main-content .main-content-form form textarea {
+  width: 100%;
+  border: 1px solid #17a2b8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-content .main-content-form form button {
+  float: right;
+  border: none;
+  background: #17a2b8;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.main-content-posts .post-component {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content-posts .post-component .post-component-author {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.main-content-posts .post-component .post-component-author img {
+  border-radius: 50%;
+  width: 55px;
+}
+
+.main-content-posts .post-component .post-component-author h3 {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.main-content-posts .post-component .post-component-author span {
+  float: right;
+  margin-top: 8px;
+}
+
+.main-content-posts .post-component .post-component-posts {
+  background: #f7f7f7;
+  width: 100%;
+  padding: 10px 20px;
+}
+.resetImg{
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 10%;
+}
